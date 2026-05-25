@@ -1,0 +1,24 @@
+[project]
+name = "BalooJobber"
+version = "0.1.0"
+description = "Automated job search and CV matcher using LLMs and Cross Encoders"
+authors = [
+    { name = "Sophie Altayf", email = "sophie.altayf@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas==2.3.3",
+    "serpapi==1.0.2",
+    "python-dotenv==1.2.2",
+    "python-jobspy==1.1.82",
+    "openai==2.38.0",
+    "torch>=2.12.0",
+    "sentence_transformers==5.5.1"
+]
+
+[build-system]
+requires = ["setuptools==81.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
